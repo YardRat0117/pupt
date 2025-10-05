@@ -8,7 +8,7 @@ async fn main() {
     let git = git::git_status();
     let time = time::current_time();
 
-    let prompt = format!("╭─ [{} {}] {} - {}\n╰─❯ ", battery, time, dir, git);
+    let prompt = format!("╭─ [{} {}] {}{}\n╰─❯ ", battery, time, dir, git);
 
     println!("{}", prompt);
 }

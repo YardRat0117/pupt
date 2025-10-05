@@ -1,0 +1,11 @@
+[package]
+name = "pupt"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+colored = "2"
+whoami = "1"
+git2 = "0.18"
+chrono = "0.4.42"

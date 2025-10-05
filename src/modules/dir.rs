@@ -14,5 +14,5 @@ pub fn short_dir() -> String {
         path_str
     };
 
-    rgb(88, 166, 255, &short).to_string()
+    rgb(102, 198, 255, &short).to_string()
 }
