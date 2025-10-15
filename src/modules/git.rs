@@ -22,10 +22,10 @@ pub fn git_status() -> String {
 
     for entry in statuses.iter() {
         let s = entry.status();
-        if s.is_wt_modified() || s.is_wt_new() {
+        if s.is_wt_modified() || s.is_wt_new() || s.is_wt_deleted() || s.is_wt_renamed() {
             has_dirty = true;
             break;
-        } else if s.is_index_modified() || s.is_index_new() || s.is_index_deleted() {
+        } else if s.is_index_modified() || s.is_index_new() || s.is_index_deleted() || s.is_index_renamed() {
             has_staged = true;
         }
     }
