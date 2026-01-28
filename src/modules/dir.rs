@@ -1,7 +1,7 @@
 use crate::modules::rgb::rgb;
 use std::env;
 
-pub fn short_dir() -> String {
+pub async fn short_dir() -> String {
     let path = env::current_dir().unwrap();
     let mut path_str = path.to_str().unwrap().to_string();
     let home = env::var("HOME").unwrap();

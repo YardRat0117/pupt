@@ -25,8 +25,8 @@ pub async fn battery_status() -> String {
     let battery_str = format!("{}%% ({:.2}W)", capacity, power_watts);
 
     let battery_colored = match cap_value {
-        80..=100 => rgb(86, 211, 100, &battery_str),
-        30..=79 => rgb(227, 179, 65, &battery_str),
+        75..=100 => rgb(86, 211, 100, &battery_str),
+        30..=74 => rgb(227, 179, 65, &battery_str),
         _ => rgb(248, 81, 73, &battery_str),
     };
 
